@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--layerlist is like array which stores item and diplay that grapics on screen
+     so here 1st item is drawbale which is color and 2nd is our drawab
+     icon so 2nd is overlapped on 1st item-->
+
+
+
+    <item
+        android:right="0dp"
+        android:left="0dp"
+        android:top="0dp"
+        android:bottom="0dp"
+        android:drawable="@color/splash"
+        ></item>
+
+    <item
+        android:drawable="@drawable/spice_treat_logo"
+        android:height="500dp"
+        android:width="500dp"
+        android:gravity="center"></item>
+</layer-list>

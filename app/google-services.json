@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "535860788183",
+    "project_id": "restaurant-billing-2ee62",
+    "storage_bucket": "restaurant-billing-2ee62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535860788183:android:97bf00d09d9b271b526992",
+        "android_client_info": {
+          "package_name": "com.example.billingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535860788183-4ak22r4mejasdqbql68ck2l6544sptdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjm8n004kbMHJ8hmep3Q2IqrOBVbuQgeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535860788183-4ak22r4mejasdqbql68ck2l6544sptdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

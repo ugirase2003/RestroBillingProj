@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Customer Name:-"
+        android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/rec_cname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ujjwal Girase"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Mobile No:-"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/rec_mo"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="9421636258"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="Total Paid Amount:-"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rec_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="265 Rs"
+            android:textColor="#FF0000"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</LinearLayout>

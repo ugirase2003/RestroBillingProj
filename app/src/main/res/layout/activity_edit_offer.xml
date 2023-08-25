@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Edit_Offer">
+
+    <TextView
+
+        android:textColor="#EAEAEA"
+        android:fontFamily="@font/arbutus_slab"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#FFD65C"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Edit Offer"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:id="@+id/on_order_above_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Offer Price on Order Above" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:id="@+id/offer_price_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Offer Price "
+        />
+
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/offer_desc_update"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Description(max 60 words) "/>
+
+    <Button
+        android:id="@+id/update_offer"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Offer "
+        android:backgroundTint="#CDDC39"/>
+
+    <Button
+        android:id="@+id/del_offer"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Offer "
+        android:backgroundTint="#FF367B"/>
+
+</LinearLayout>

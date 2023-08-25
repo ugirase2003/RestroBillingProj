@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+     <LinearLayout
+         android:layout_width="match_parent"
+
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/menu_head"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="30dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginRight="30dp"
+             android:fontFamily="sans-serif"
+             android:text="Select Your Choice"
+             android:textColor="@color/black"
+             android:textSize="25dp"
+             android:textStyle="bold" />
+
+    <!--      <TextView
+             android:id="@+id/menu_head"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="30dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginRight="30dp"
+             android:fontFamily="sans-serif"
+             android:text="Select Your Choice"
+             android:textColor="@color/black"
+             android:textSize="25dp"
+             android:textStyle="bold" />
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recycler_view"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+             android:layout_marginTop="10dp"
+              /> -->
+
+
+
+<!--tabMode is user for setting tab items in scrollable format -->
+    <com.google.android.material.tabs.TabLayout
+android:id="@+id/tabLayout"
+        app:tabMode="scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+<androidx.viewpager2.widget.ViewPager2
+    android:id="@+id/viewPager2"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+     </LinearLayout>
+
+
+
+
+
+
+ </FrameLayout>

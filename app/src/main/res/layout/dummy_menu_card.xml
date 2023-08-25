@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <soup.neumorphism.NeumorphCardView
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/menu_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:neumorph_shadowElevation="3dp"
+        app:neumorph_shapeType="basin"
+        tools:ignore="MissingClass">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_menu"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:srcCompat="@drawable/burger" />
+
+                <ProgressBar
+                    android:id="@+id/loading_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arbutus_slab"
+                    android:text="Burger"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:text="Price:-"
+                        android:textColor="#303030"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:text="$30"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alegreya_sc"
+                    android:text="Bestseller"
+                    android:textColor="#FB0000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/add_text_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Add"
+                    android:textColor="#292828"
+                    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edit_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="invisible"
+        android:background="#F87A7A"
+        android:clickable="true"
+        android:layout_marginLeft="2dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/alata"
+        android:text="Edit"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+</FrameLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+</LinearLayout>

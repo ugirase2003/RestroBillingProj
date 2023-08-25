@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.billingsystem">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BillingSystem">
+        <activity
+            android:noHistory="true"
+            android:name=".Edit_table"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Edit_Menu"
+            android:exported="false"
+            android:label="@string/title_activity_edit_menu"
+            android:noHistory="true"
+            android:theme="@style/Theme.BillingSystem.NoActionBar" />
+        <activity
+            android:name=".Edit_Offer"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".Admin_Auth"
+            android:exported="false"
+            android:label="@string/title_activity_admin_auth"
+            android:noHistory="true"
+            android:theme="@style/Theme.BillingSystem.NoActionBar" />
+        <activity
+            android:name=".Bill_Mode"
+            android:exported="false" />
+        <activity
+            android:name=".Billing_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

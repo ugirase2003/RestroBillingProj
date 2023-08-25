@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Billing_Activity">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Details"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/c_name"
+        android:autoSizeMaxTextSize="5dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        />
+    <EditText
+        android:id="@+id/c_number"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Phone No."
+        android:gravity="center"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount to be Paid :- Rs "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/generated_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    </LinearLayout>
+    <Button
+        android:gravity="center"
+        android:id="@+id/payment_btn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Payment"/>
+</LinearLayout>

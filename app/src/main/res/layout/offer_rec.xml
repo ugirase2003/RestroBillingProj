@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:id="@+id/offer_edit"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#D0DDD3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/offers_icon"
+        android:layout_width="100dp"
+        android:src="@drawable/offer"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/discount_rs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:text="Get 100 Rs Off  "
+            />
+
+        <TextView
+            android:id="@+id/disc_criteria"
+            style="bold"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alata"
+            android:text="On Order Above 700"
+            android:textColor="#2C2B2B" />
+
+        <TextView
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/disc_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    <ProgressBar
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/offers_load"/>
+</FrameLayout>

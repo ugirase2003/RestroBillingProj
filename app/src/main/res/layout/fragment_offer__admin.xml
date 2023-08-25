@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Offer_Admin">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <TextView
+       android:layout_marginLeft="10dp"
+       android:fontFamily="@font/alata"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Offers"
+       android:textSize="25dp"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_marginTop="10dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/offer_rec_admin"/>
+
+
+</LinearLayout>
+   <TextView
+       android:visibility="invisible"
+       android:id="@+id/offer_admin_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Currently There is no Offer"
+      android:layout_gravity="center"
+      android:textStyle="italic"
+      android:textSize="25dp"
+      android:fontFamily="@font/alegreya_sc"/>
+
+</FrameLayout>

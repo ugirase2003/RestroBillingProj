@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/add_item"
+    android:title="Add Item"/>
+
+    <item
+        android:id="@+id/see_history"
+        android:title="Customers Record"/>
+    <item
+        android:id="@+id/orders"
+        android:title=" Current Orders"/>
+
+    <item
+        android:id="@+id/offers"
+        android:title="Offers"/>
+    <item
+        android:id="@+id/mng_offers"
+        android:title="Manage Offers"/>
+    <item
+        android:id="@+id/mng_menu"
+        android:title="Manage Menu"/>
+
+
+    <item
+        android:id="@+id/mng_admin"
+        android:title="Manage Admin"/>
+
+</menu>

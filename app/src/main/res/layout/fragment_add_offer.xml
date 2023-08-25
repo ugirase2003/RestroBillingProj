@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".add_offer">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:textColor="#EAEAEA"
+            android:fontFamily="@font/arbutus_slab"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#5CCCFF"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Add Offer"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:id="@+id/on_order_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Offer Price on Order Above" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:id="@+id/offer_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Offer Price "
+                />
+
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/offer_disc"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Enter Description(max 60 words) optional "/>
+
+        <Button
+            android:id="@+id/add_offer"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Offer "
+            android:backgroundTint="#EE9FFB"/>
+        <ProgressBar
+            android:id="@+id/add_offer_load"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#5CCCFF"/>
+    </LinearLayout>
+
+</FrameLayout>

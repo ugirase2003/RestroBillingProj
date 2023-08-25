@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".Edit_Menu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Edit Item"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/update_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter Item Name"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/update_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter Category"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/update_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter Price"
+        android:inputType="number" />
+
+    <EditText
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:id="@+id/update_selling_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter Selling Status"
+        android:inputType="text" />
+
+    <Button android:id="@+id/update_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Update Item"
+        android:backgroundTint="@color/teal_200"
+        />
+
+    <Button android:id="@+id/delete_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Delete Item"
+        android:backgroundTint="#E91E1E"
+        />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note:- Enter Category as below format"/>
+
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veg,Nonveg,Desset,Starter,Fastfood,Beverages"/>
+
+
+    <ProgressBar
+        android:id="@+id/menu_load_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#E8C14C"
+        android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+

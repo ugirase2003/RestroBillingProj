@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/cart_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Your Cart"
+            android:textColor="@color/black"
+
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_items_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="20dp"
+
+           />
+   <LinearLayout
+       android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/total"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total Payable Amount :- "
+            android:textSize="15dp"
+            android:textStyle="italic"/>
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+        <TextView
+
+            android:textColor="#000000"
+            android:id="@+id/amt_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="15dp"
+         />
+    <View
+        android:visibility="invisible"
+        android:id="@+id/dash_line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="25dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+</FrameLayout>
+       <TextView
+           android:textColor="#FF0000"
+           android:id="@+id/total_amt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:textStyle="bold"
+           android:text="500"
+           android:textSize="15dp"
+           />
+
+    </LinearLayout>
+<soup.neumorphism.NeumorphButton
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    style="@style/ShapeAppearance.Neumorph.Button"
+    app:neumorph_shapeType="basin"
+    app:neumorph_shadowElevation="2.5dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/pay"
+    android:text="Pay"/>
+        <ProgressBar
+            android:visibility="invisible"
+            android:layout_marginTop="3dp"
+            android:indeterminateTint="@color/splash"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_load"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_width="250dp"
+         android:layout_height="wrap_content"
+        android:text="Cart Is Empty!!"
+        android:visibility="invisible"
+
+        />
+</FrameLayout>

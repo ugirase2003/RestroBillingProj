@@ -80,6 +80,3 @@ Contributions are welcome! If you find any bugs or want to improve the app, feel
 
 If you have any questions or need assistance, you can reach out to ugirase@2003gmail.com.
 
----
-
-Feel free to customize this README template according to your app's specifics. It's great to focus on functionality while acknowledging the UI's work-in-progress state. Providing clear instructions and usage details will help users and collaborators understand your project better. Good luck with your restaurant billing and ordering app development!
